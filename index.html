@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Forms.png">
+
+</head>
+<body>
+    <form action="">
+        <fieldset id="dadosPessoais" method="POST">
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nomeCompleto">Nome Completo: </label>
+                <input id="nomeCompleto" type="text" name="nome-completo" placeholder="Insira seu Nome">
+            </div>
+
+            <div>
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email-usuario" required placeholder="Insira seu Email">
+            </div>
+
+            <div>
+                <label for="senha">Senha: </label>
+                <input name="senha-usuario" id="senha" type="password" min="6" required placeholder="Insira sua Senha">
+            </div>
+
+            <div>
+                <label for="dataNascimento">Data de Nascimento: </label>
+                <input id="dataNascimento" type="date" name="nascimento-usuario">
+            </div>
+        </fieldset>
+
+        <fieldset id="infoAdicionais">
+            <legend>Informações Adicionais</legend>
+            <div>
+                <label for="genero">Gênero: </label>
+                <input id="genero" type="radio" name="opcao1" valor="masculino">Masculino
+                <input id="genero" type="radio" name="opcao1" valor="feminino">Feminino
+                <input id="genero" type="radio" name="opcao1" valor="outros">Outros
+            </div>
+
+            <div>
+                <label for="interesse">Interesses: </label>
+                <input type="checkbox" name="tecnologia" id="interesse" value="tecnologia"> Tecnologia
+                <input type="checkbox" name="esportes" id="interesse" value="esportes"> Esportes
+                <input type="checkbox" name="musica" id="interesse" value="musica"> Música
+                <input type="checkbox" name="jogos" id="interesse" value="jogos"> Jogos
+            </div>
+
+            <div>
+                <label for="listaPaises">País: </label>
+                <select name="lista-paises" id="listaPaises">
+                    <option value="brasil" name="brasil">Brasil</option>
+                    <option value="portugal" name="portugal">Portugal</option>
+                    <option value="canada" name="canada">Canadá</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset id="outrosCampos">
+            <legend>Outros campos:</legend>
+            <div>
+                <label for="fotoPerfil">Foto de Perfil: </label>
+                <input type="file" name="foto=perfil" id="fotoPerfil">
+            </div>
+
+            <div>
+                <label for="corFavorita">Cor Favorita: </label>
+                <input id="corFavorita" type="color" name="cor-favorita">
+            </div>
+
+            <div>
+                <label for="nivelSatisfacao">Nível de Satisfação: </label>
+                <input id="nivelSatisfacao" type="range" name="nivel-satisfacao-usuario" min="0" max="10" value="10"> 
+            </div>
+        </fieldset>
+
+        <fieldset id="mensagem">
+            <label for="mensagemLivre">Mensagem: </label>
+            <textarea name="mensagem-livre" id="mensagemLivre"></textarea>
+        </fieldset>
+        <fieldset id="botoesFormulario">
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+    </form>
+</body> 
+</html>
